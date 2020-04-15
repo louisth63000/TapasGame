@@ -3,6 +3,7 @@ CREATE TABLE Tapas
 idTapas INT(11),
 nomTapas VARCHAR(64),
 idCommande INT(11),
+idCategorie INT(11),
 PRIMARY KEY (idTapas)
 );
 
@@ -18,6 +19,7 @@ CREATE TABLE Commande
 idCommande INT(11), 
 numeroCommande INT(11),
 heure DATE,
+idTapas INT(11),
 PRIMARY KEY (idCommande)
 );
 
@@ -27,6 +29,7 @@ idTable INT(11),
 numeroTable INT(11), 
 nomPersonne VARCHAR(64),
 nombrePersonne INT(11),
+idCommande INT(11),
 PRIMARY KEY (idTable)
 );
 
