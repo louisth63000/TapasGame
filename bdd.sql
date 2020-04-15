@@ -10,7 +10,7 @@ CREATE TABLE Categorie
 (
 idCategorie INT(11),
 nomCategorie VARCHAR(64),
-PRIMARY KEY (idCatégorie)
+PRIMARY KEY (idCategorie)
 );
 
 CREATE TABLE Commande
