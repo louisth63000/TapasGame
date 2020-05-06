@@ -24,7 +24,7 @@ public class TacosFX extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/home/FXML.fxml"));
         
         Scene scene = new Scene(root);
         

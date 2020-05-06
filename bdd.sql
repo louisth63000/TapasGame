@@ -1,36 +1,33 @@
 CREATE TABLE Tapas
 (
-idTapas INT(11),
-nomTapas VARCHAR(64),
-idCommande INT(11),
-idCategorie INT(11),
-PRIMARY KEY (idTapas)
+	idTapas INT(11),
+	nomTapas VARCHAR(64),
+	idCommande INT(11),
+	idCategorie INT(11),
+	PRIMARY KEY (idTapas)
 );
 
 CREATE TABLE Categorie
 (
-idCategorie INT(11),
-nomCategorie VARCHAR(64),
-PRIMARY KEY (idCategorie)
+	idCategorie INT(11),
+	nomCategorie VARCHAR(64),
+	PRIMARY KEY (idCategorie)
 );
 
 CREATE TABLE Commande
 (
-idCommande INT(11), 
-numeroCommande INT(11),
-heure DATE,
-idTapas INT(11),
-PRIMARY KEY (idCommande)
+	idCommande INT(11), 
+	heure DATE,
+	idTapas INT(11),
+	PRIMARY KEY (idCommande)
 );
 
 CREATE TABLE Tables
 (
-idTable INT(11), 
-numeroTable INT(11), 
-nomPersonne VARCHAR(64),
-nombrePersonne INT(11),
-idCommande INT(11),
-PRIMARY KEY (idTable)
+	idTable INT(11), 
+	nombrePersonne INT(11),
+	idCommande INT(11),
+	PRIMARY KEY (idTable)
 );
 
 ALTER TABLE Tapas
