@@ -18,7 +18,7 @@ CREATE TABLE Commande
 (
 	idCommande INT(11), 
 	heure DATE,
-	idTapas INT(11),
+	idTable INT(11),
 	PRIMARY KEY (idCommande)
 );
 
@@ -41,8 +41,8 @@ FOREIGN KEY (idCommande)
 REFERENCES Commande(idCommande);
 
 ALTER TABLE Commande
-ADD CONSTRAINT Commande_idTapas
-FOREIGN KEY (idTapas)
-REFERENCES Tapas(idTapas);
+ADD CONSTRAINT Commande_idTable
+FOREIGN KEY (idTable)
+REFERENCES Tables(idTable);
 
 

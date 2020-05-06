@@ -12,8 +12,17 @@ package DTO;
 public class Commande {
     private int idCommande;
     private String heure;
-    private int idTapas;
+    private int idTable;
 
+    public int getIdTable() {
+        return idTable;
+    }
+
+    public void setIdTable(int idTable) {
+        this.idTable = idTable;
+    }
+
+    
     public int getIdCommande() {
         return idCommande;
     }
@@ -29,14 +38,5 @@ public class Commande {
 
     public void setHeure(String heure) {
         this.heure = heure;
-    }
-
-    public int getIdTapas() {
-        return idTapas;
-    }
-
-    public void setIdTapas(int idTapas) {
-        this.idTapas = idTapas;
-    }
-    
+    }   
 }

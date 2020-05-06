@@ -5,14 +5,12 @@
  */
 package DAO;
 
-import static DAO.CommandeManager.findCommande;
 import DTO.Commande;
-import DTO.Tables;
+import DTO.Tapas;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import tools.DatabaseLinkers;
@@ -21,27 +19,26 @@ import tools.DatabaseLinkers;
  *
  * @author utilisateur
  */
-public class TablesManager {
-    public static Tables findTables(int idTables)
+public class TapasManager {
+    public static Tapas findTapas(int idTapas)
     {
-        Tables table= null;
+      Tapas tapas= null;
         Connection co =DatabaseLinkers.getConnexion();
         PreparedStatement state;
         try {
-            state = co.prepareStatement("SELECT * FROM Tables WHERE idTable=?");
-            state.setInt(1, idTables);
+            state = co.prepareStatement("SELECT * FROM Tapas WHERE idTapas=?");
+            state.setInt(1, idTapas);
             ResultSet result=state.executeQuery();
             if(result.next())
             {
-                table=new Tables();
-                table.setIdTables(idTables);
-                table.setIdCommande(result.getInt("idCommande"));
-                table.setNombrePersonne(result.getInt("nombrePersonne"));
+                tapas=new Tapas();
+                tapas.setIdTapas(idTapas);
+                tapas.setIdCommande(result.getInt("idCommande"));
+                tapas.setIdCategorie(result.getInt("idTable"));
             }
         } catch (SQLException ex) {
             Logger.getLogger(TablesManager.class.getName()).log(Level.SEVERE, null, ex);
         }
-      return table;
+      return tapas;   
     }
-     
 }
