@@ -24,7 +24,7 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <TextField layoutX="376.0" layoutY="188.0" prefHeight="25.0" prefWidth="35.0" />
+      <TextField fx:id="text1" layoutX="376.0" layoutY="188.0" prefHeight="25.0" prefWidth="35.0" />
       <Text fill="#f8f8f8" layoutX="118.0" layoutY="206.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.5" text="Combien de personnes être vous ? ">
          <font>
             <Font size="16.0" />
