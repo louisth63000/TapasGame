@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="57.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tapas au poisson" textAlignment="CENTER" wrappingWidth="105.20703125" />
+      <Text layoutX="255.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tapas à la viande" />
+      <Text layoutX="434.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tapas végétarienne" />
+      <Button layoutX="249.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Continuer">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ImageView fx:id="tapasviande" fitHeight="177.0" fitWidth="127.0" layoutX="46.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tapaspoisson" fitHeight="177.0" fitWidth="127.0" layoutX="230.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="tapasvegetarienne" fitHeight="177.0" fitWidth="127.0" layoutX="422.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <SplitMenuButton layoutX="42.0" layoutY="271.0" mnemonicParsing="false" text="Nombre de Tapas">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="234.0" layoutY="271.0" mnemonicParsing="false" text="Nombre de Tapas">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="421.0" layoutY="271.0" mnemonicParsing="false" text="Nombre de Tapas">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
